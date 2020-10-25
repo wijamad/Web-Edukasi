@@ -1,0 +1,113 @@
+body
+{
+    background-image: url(belajar.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header
+{
+    padding: 30px;
+    text-align: center;
+    background: rgba(100,100,100, 0.6);
+    color: white;
+}
+.color h1
+{
+    font-size: 40px;
+}
+.navbar
+{
+    background-color: rgb(77, 77, 77);
+    overflow: hidden;
+}
+.navbar a
+{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+}
+.navbar a.right
+{
+    float: right;
+}
+.navbar a:hover
+{
+    background-color: rgba(rgb(73, 64, 64), rgb(17, 17, 17), rgb(197, 197, 197), 0.3);
+    color: black;
+}
+*
+{
+    box-sizing: border-box;
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.side
+{
+    flex: 30%;
+    background-color: #414145;
+    padding: 20px;
+    color: white;
+}
+
+
+.button
+{
+    background-color: #3c3c3c;
+    box-shadow: rgba(0, 0, 0, 2);
+    border: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.main
+{
+    flex: 70%;
+    background-color: #ffffff;
+    padding: 20px;
+}
+@media screen and (max-width: 700px)
+{
+    .row 
+    {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 400px)
+{
+    .navbar a 
+    {
+        float: none;
+        width: 100%;
+    }
+}
+.footer
+{
+    padding: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    
+}
+.footer h3
+{
+    position: relative;
+    left: 15%;
+    float: center;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+}
