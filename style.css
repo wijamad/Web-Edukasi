@@ -1,31 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&display=swap');
+
 body
 {
-    background-image: url(belajar.jpg);
     background-size: cover;
     background-position: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 .header
 {
-    padding: 30px;
+    padding-bottom: 2px;
+    padding-top: 1px;
     text-align: center;
-    background: rgba(100,100,100, 0.6);
+    background:  #44749d ;
     color: white;
 }
-.color h1
+.header h1
 {
-    font-size: 40px;
+    font-size: 50px;
+    font-family: 'Lobster Two', cursive;
 }
+.header p 
+{
+    font-family: 'Courgette', cursive;
+    font-size: 23px;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
 .navbar
 {
-    background-color: rgb(77, 77, 77);
+    background: #c6d4e1;
     overflow: hidden;
 }
 .navbar a
 {
     float: left;
     display: block;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 14px 18px;
     text-decoration: none;
@@ -36,8 +48,35 @@ body
 }
 .navbar a:hover
 {
-    background-color: rgba(rgb(73, 64, 64), rgb(17, 17, 17), rgb(197, 197, 197), 0.3);
-    color: black;
+    background-color: #44749d;
+    color: rgb(255, 255, 255);
+}
+.navbar .search-bar
+{
+    float: right;
+}
+.navbar input[type=text] 
+{
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+  
+.navbar .search-bar button 
+{
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+  
+.navbar .search-bar button:hover {
+    background: #ccc;
 }
 *
 {
@@ -51,9 +90,9 @@ body
 .side
 {
     flex: 30%;
-    background-color: #414145;
+    background-color:  #ebe7e0;
     padding: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -74,40 +113,41 @@ body
 .main
 {
     flex: 70%;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
 }
-@media screen and (max-width: 700px)
-{
-    .row 
-    {
-        flex-direction: column;
-    }
-}
-@media screen and (max-width: 400px)
-{
-    .navbar a 
-    {
-        float: none;
-        width: 100%;
-    }
-}
+
 .footer
 {
     padding: 20px;
     text-align: center;
-    background: rgba(0, 0, 0, 0.5);
+    background: #c6d4e1;
     display: flex;
-    
 }
-.footer h3
+.footer .posisi table
+{
+    width: 50%;
+    color: black;
+}
+.footer .posisi table h1
+{
+    font-size: 40px;
+    font-family: 'Lobster Two', cursive;
+    color: rgb(36, 36, 36);
+}
+.footer .posisi table p
+{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+.footer .posisi2 table tr th
 {
     position: relative;
-    left: 15%;
-    float: center;
-    display: block;
-    color: white;
+    top: 40px;
+    right: 50px;
     text-align: center;
-    padding: 14px 18px;
-    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 50px;
 }

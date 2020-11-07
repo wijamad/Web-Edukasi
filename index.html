@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/07f9deac3e.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Tutor</title>
@@ -12,18 +13,19 @@
         <p>Smart Tutor adalah website yang dibuat untuk memudahkan para mahasiswa baru dalam menentukan kelanjutan pendidikan mereka. Website ini menyediakan tutorer-tutorer berkualitas yang diambil dari 3 top Universitas di Indonesia. Mereka akan menjelaskan bagaimana cara mendapatkan peluang yang besar untuk masuk dalam perguruan tinggi.</p>
     </div>
     <div class="navbar">
-        <a href="#">Beranda</a>
-        <a href="#">Berita Terbaru</a>
-        <a href="#">Kontak</a>
-        <a href="#" class="right">Cari</a>
-        <a href="#" class="right">Daftar</a>
+        <a href="#"><i class="fas fa-home" style="padding-right: 5px;"></i>Beranda</a>
+        <a href="#"><i class="fas fa-newspaper" style="padding-right: 5px;"></i>Berita Terbaru</a>
+        <a href="#"><i class="fas fa-address-book" style="padding-right: 5px;"></i>Kontak</a>
+        <div class="search-bar">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Cari" name="Cari">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
         </div>
+        <a href="#" class="right"><i class="fas fa-user" style="padding-right: 5px;"></i>Registrasi</a>
     </div>
     <div class="row">
         <div class="side">
-            <div class="fakeimg" style="height:200px;">
-                <img src="wer.png" alt="#" style="height: 220px; position: absolute; padding: 0%;">
-            </div>
             <h1>Pengen Masuk Universitas Impian ?</h1>
             <h3>Tunggu Apa lagi ?</h3>
             <h3>Yuk join komunitas kita</h3>
@@ -32,11 +34,25 @@
         <div class="main">Dan juga isikan konten samping kanan</div>
     </div>
     <div class="footer">
-        <h3>Tentang Kami</h3>
-        <h3>produk</h3>
-        <h3>Aplikasi</h3>
-        <h3>Bantuan dan Dukungan</h3>
-        <h3>Privasi dan Persyaratan</h3>
+        <div class="posisi">
+            <table>
+                <tr>
+                    <th><h1>SmartTutor</h1></th>
+                </tr>
+                <tr>
+                    <td><p>Tutor adalah website yang dibuat untuk memudahkan para mahasiswa baru dalam menentukan kelanjutan pendidikan mereka. Website ini menyediakan tutorer-tutorer berkualitas yang diambil dari 3 top Universitas di Indonesia. Mereka akan menjelaskan bagaimana cara mendapatkan peluang yang besar untuk masuk dalam perguruan tinggi.</p></td>
+                </tr>
+            </table>
+        </div>
+        <div class="posisi2">
+            <table>
+                <tr>
+                    <th><h3>Dukungan</h3></th>
+                    <th><h3>Terhubung</h3></th>
+                    <th><h3>Layanan</h3></th>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
 </html>
