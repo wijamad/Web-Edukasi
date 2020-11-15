@@ -6,31 +6,19 @@ body
     background-size: cover;
     background-position: center;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 .header
 {
-    padding-bottom: 2px;
+    padding-bottom: 5px;
+    background-image: linear-gradient(grey, #00121b);
     padding-top: 1px;
     text-align: center;
-    background:  #44749d ;
     color: white;
 }
-.header h1
-{
-    font-size: 50px;
-    font-family: 'Lobster Two', cursive;
-}
-.header p 
-{
-    font-family: 'Courgette', cursive;
-    font-size: 23px;
-    margin-left: 6%;
-    margin-right: 6%;
-}
-
 .navbar
 {
-    background: #c6d4e1;
+    background: #28263a;
     overflow: hidden;
 }
 .navbar a
@@ -48,7 +36,7 @@ body
 }
 .navbar a:hover
 {
-    background-color: #44749d;
+    background-color: #545454;
     color: rgb(255, 255, 255);
 }
 .navbar .search-bar
@@ -81,20 +69,23 @@ body
 *
 {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 .row
 {
+    
     display: flex;
     flex-wrap: wrap;
 }
 .side
 {
     flex: 30%;
-    background-color:  #ebe7e0;
+    background-size: cover;
+    background-color:  #32353c;
     padding: 20px;
     color: rgb(0, 0, 0);
 }
-
 
 .button
 {
@@ -113,41 +104,109 @@ body
 .main
 {
     flex: 70%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #1a1d31;
     padding: 20px;
 }
-
 .footer
 {
-    padding: 20px;
-    text-align: center;
-    background: #c6d4e1;
+    width: 100%;
+    background: #00121b;
+    display: block;
+}
+.inner-footer
+{
+    width: 95%;
+    margin: auto;
+    padding: 30px 10px;
     display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
 }
-.footer .posisi table
+.footer-items
 {
-    width: 50%;
-    color: black;
+    width: 25%;
+    padding: 10px 20px;
+    box-sizing: border-box;
 }
-.footer .posisi table h1
+h1
 {
-    font-size: 40px;
-    font-family: 'Lobster Two', cursive;
-    color: rgb(36, 36, 36);
+    padding: 10px 0;
+    font-size: 25px;
+    color: #fff;
+    text-transform: capitalize;
 }
-.footer .posisi table p
+.footer-items p
 {
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
+    color: grey;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 25px;
 }
-.footer .posisi2 table tr th
+h2
 {
-    position: relative;
-    top: 40px;
-    right: 50px;
+    margin: 10px 0;
+    color: grey;
+    font-size: 16px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.border
+{
+    height: 2px;
+    width: 40px;
+    background: #ff9800;
+}
+ul
+{
+    list-style: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+ul a
+{
+    text-decoration: none;
+    outline: none;
+    color: white;
+    transition: 0.3s;
+}
+ul a:hover
+{
+    color: #ff9800;
+}
+ul li 
+{
+    margin: 10px 0;
+    height: 15px;
+}
+li i
+{
+    margin-right: 20px;
+}
+.sosial-media
+{
+    width: 100%;
+    color: #fff;
     text-align: center;
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
-    padding: 50px;
+}
+.sosial-media a
+{
+    text-decoration: none;
+}
+.sosial-media i
+{
+    height: 15px;
+    width: 15px;
+    margin: 20px 5px;
+    padding: 10px;
+    color: #fff;
+    transition: 0.3s;
+}
+.footer-bottom
+{
+    padding: 10px;
+    background: #3d545f;
+    color: #fff;
+    font-size: 12px;
 }
